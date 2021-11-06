@@ -32,21 +32,9 @@ public class Chat {
         JButton button = new JButton("Send");
         button.setBounds(400, 620, 100, 40);
         button.addActionListener(e -> {
-            JButton source = (JButton) e.getSource();
-            area.setText((source.getText()));
-
+            area.setText((field.getText()));
         });
         mainFrame.add(button);
-
-
-        //JTextField field = new JTextField();
-        //  field.setBounds(1, 620, 400, 40);
-        // mainFrame.add(field);
-        // field.addActionListener( e -> {
-        //  JTextField source = (JTextField) e.getSource();
-        //  button.setText(source.getText());
-        //  });
-        //mainFrame.add(field);
 
 
         mainFrame.setVisible(true);
